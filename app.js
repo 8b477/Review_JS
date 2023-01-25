@@ -7,7 +7,7 @@ console.log("********************************************************");
 console.log("********************************************************");
 //#endregion
 
-//#region Récupération d'un élément du DOM et lui affiche une valeur
+//#region Récupération d'un élément du DOM et lui ajoute du texte
 document.getElementById("title").innerText = ("Review to Javascript");
 //#endregion
 
@@ -166,4 +166,95 @@ console.log("Boucle terminée !");
 
 console.log("************************************************");
 console.log("************************************************");
+//#endregion
+
+//#region Boucle foreach sur un tableau ou un objet
+
+const Personne = {
+    Name: 'Jean',
+    FirstName: 'Dujardin',
+    Year: 45
+}
+
+console.log("J'affiche les données de mon objet personne à l'aide d'une boucle 'for in' :");
+
+for (item in Personne)
+    console.log("=> " + item + ": " + Personne[item])
+
+console.log("J'affiche les données de mon tableau à l'aide d'une boucle 'for in' :");
+
+const tableTest = ['un', 2, null, 'blabla', true];
+for (props in tableTest) {
+    console.log(`=> la valur de l'index ${props} est => ${tableTest[props]}`);
+}
+//#endregion
+
+//#region Les fonctions avancées une => IIFE => Imediately Invoke Function Execution
+
+//On commence par deux paire de parenthese comme ci dessous
+//Astuce on commence avec deux paires de paranthèse comme ci dessous
+//()()
+//Ma première paire de parenthese me permet de définir ma fonction
+//Ma seconde paire de parenthèse marque l'exécution immédiate de ma première paires de parenthèse
+//Comme ma première prend des paramètres en entrée les secondes,
+//Parenthèe doivent donc prendre ses même paramètres en entrée
+(function (a, b) {
+    var result = a + b;
+    console.log("Fonction IIFE : " + result);
+})(10, 12);
+
+//En mode function fléchée exemple
+((a, b) => {
+    var result = a + b;
+    console.log("Fonction fléchée : " + result);
+})(10, 12);
+//#endregion
+
+//#region IMPORTANT SUR LE MOT CLEF 'LET'ET 'CONST'
+
+//! Note a moi même , le mot clef 'let' limite le scope
+//de la variable si par exemple elle se trouve dans une fonction elle
+//ne pourras pas être lu en dehors à l'invers du mot clef 'var'
+//qui lui pourras être récupérer !!!
+
+//Le mot clef CONST est imuable une fois une valeur attribué
+//à celui-ci il ne pourra plus être modifié et la convention
+//nous invite a déclarée le nom des variables const en MAJUSCULE
+//#endregion
+
+//#region L'objet => 'Math'
+console.log("*******************************************");
+console.log("*******************************************");
+const a = 1.4;
+const b = 2.9;
+const c = 3;
+
+const d = Math.random() * 10;
+
+console.log(Math.max(a, b, c));
+console.log(Math.min(a, b, c));
+console.log(Math.round(a));
+console.log(Math.floor(b));
+console.log(Math.ceil(b));
+
+console.log((`Chiffre random arrondi au supérieur : ${Math.ceil(d)}`));
+
+
+console.log("*******************************************")
+console.log("*******************************************")
+//#endregion
+
+//#region L'objet => 'Date' => !! ATTENTION LES MOIS PASSER EN SECOND PARAMETRES COMMENCE A  0 COMME UN TABLEAU !!
+//getTime donne la date en miliseconde depuis le 1 Janvier 1970 ce qui nous permet de calculer des date d'entrée par User
+
+const TODAY = new Date();
+
+let birthday = new Date(1991, 0, 26);// => Ma date d'anniversaire
+
+console.log(TODAY);
+console.log(birthday);
+console.log(TODAY.getTime());
+//#endregion
+
+//#region Les méthodes sur les string => https://www.w3schools.com/js/js_string_methods.asp
 //#endregion
