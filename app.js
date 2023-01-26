@@ -7,14 +7,14 @@ console.log("********************************************************");
 console.log("********************************************************");
 //#endregion
 
-//#region Récupération d'un élément du DOM et lui ajoute du texte
+//#region Récupération d'un élément du DOM et lui ajoute du texte.
 document.getElementById("title").innerText = ("Review to Javascript");
 //#endregion
 
-//#region Test des différents valeur de retour si falsy ou truesly
-let testBoolTrue1 = true; //renvoie true
-let testBoolTrue2 = "a"; //renvoie true
-let testBoolTrue3 = 1; //renvoie true
+//#region Test des différentes valeurs de retour si FALSY ou TRUSTLY.
+let testBoolTrue1 = true; //renvoie true.
+let testBoolTrue2 = "a"; //renvoie true.
+let testBoolTrue3 = 1; //renvoie true.
 
 let bool1 = Boolean(testBoolTrue1);
 let bool2 = Boolean(testBoolTrue2);
@@ -27,12 +27,12 @@ console.log("(3) " + bool3);
 
 console.log("********************************************************");
 
-let testBoolFalse1 = false; //renvoie false
-let testBoolFalse2 = ""; //renvoie false
-let testBoolFalse3 = 0; //renvoie false
-let testBoolFalse4 = undefined; //renvoie false
-let testBoolFalse5 = NaN; //renvoie false
-let testBoolFalse6 = null; //renvoie false
+let testBoolFalse1 = false; //renvoie false.
+let testBoolFalse2 = ""; //renvoie false.
+let testBoolFalse3 = 0; //renvoie false.
+let testBoolFalse4 = undefined; //renvoie false.
+let testBoolFalse5 = NaN; //renvoie false.
+let testBoolFalse6 = null; //renvoie false.
 
 let boolFalse1 = Boolean(testBoolFalse1);
 let boolFalse2 = Boolean(testBoolFalse2);
@@ -53,7 +53,7 @@ console.log("********************************************************");
 console.log("********************************************************");
 //#endregion
 
-//#region La concaténation avec les backtick  => ``
+//#region La concaténation avec les backtick  => `` .
 const firstName = 'Jonathan';
 const lastName = 'Buchet';
 
@@ -65,7 +65,7 @@ console.log("********************************************************");
 console.log("********************************************************");
 //#endregion
 
-//#region Les tableaux
+//#region Les tableaux.
 const monTableau = ['vert', 2, true];
 
 console.log(monTableau);
@@ -90,7 +90,7 @@ console.log("********************************************************");
 console.log("********************************************************");
 //#endregion
 
-//#region Les Objects
+//#region Les Objects.
 const ObjectExample = {
     Name: "Jonathan",
     Year: 10
@@ -113,7 +113,7 @@ console.log("********************************************************");
 console.log("********************************************************");
 //#endregion
 
-//#region Les ternaires
+//#region Les ternaires.
 const yearRequired = 18;
 
 const mineurYear = 15;
@@ -127,13 +127,13 @@ console.log("************************************************");
 console.log("************************************************");
 //#endregion
 
-//#region Boucle avec les instruction Break et Continue
+//#region Boucle avec les instruction Break et Continue.
 
 let number = 0;
 
-//Ici avec le mot clef 'continue' quand 'i' est égal à la valeur de 5
-//permet de sortir de l'itération de la boucle en cours et continue ensuite normalement
-//ici je met la chaine de caractère coucou pour prouver que j'intervient bien
+//Ici avec le mot clef 'continue' quand 'i' est égal à la valeur de 5,
+//Permet de sortir de l'itération de la boucle en cours et continue ensuite normalement,
+//Ici je met la chaine de caractère coucou pour prouver que j'intervient bien.
 console.log("Début de la boucle : ");
 
 for (let i = 0; i <= 10; i++) {
@@ -168,7 +168,7 @@ console.log("************************************************");
 console.log("************************************************");
 //#endregion
 
-//#region Boucle foreach sur un tableau ou un objet
+//#region Boucle foreach sur un tableau ou un objet.
 
 const Personne = {
     Name: 'Jean',
@@ -189,15 +189,15 @@ for (props in tableTest) {
 }
 //#endregion
 
-//#region Les fonctions avancées une => IIFE => Imediately Invoke Function Execution
+//#region Les fonctions avancées une => IIFE => Imediately Invoke Function Execution.
 
-//On commence par deux paire de parenthese comme ci dessous
-//Astuce on commence avec deux paires de paranthèse comme ci dessous
+//On commence par deux paire de parenthese comme ci dessous.
+//Astuce on commence avec deux paires de paranthèse comme ci dessous.
 //()()
-//Ma première paire de parenthese me permet de définir ma fonction
-//Ma seconde paire de parenthèse marque l'exécution immédiate de ma première paires de parenthèse
+//Ma première paire de parenthese me permet de définir ma fonction.
+//Ma seconde paire de parenthèse marque l'exécution immédiate de ma première paires de parenthèse.
 //Comme ma première prend des paramètres en entrée les secondes,
-//Parenthèe doivent donc prendre ses même paramètres en entrée
+//Parenthèe doivent donc prendre ses même paramètres en entrée.
 (function (a, b) {
     var result = a + b;
     console.log("Fonction IIFE : " + result);
@@ -210,7 +210,7 @@ for (props in tableTest) {
 })(10, 12);
 //#endregion
 
-//#region IMPORTANT SUR LE MOT CLEF 'LET'ET 'CONST'
+//#region IMPORTANT SUR LE MOT CLEF 'LET'ET 'CONST'.
 
 //! Note a moi même , le mot clef 'let' limite le scope
 //de la variable si par exemple elle se trouve dans une fonction elle
@@ -278,22 +278,37 @@ console.log(TODAY.getTime());
 //Il y a quand même quelque méthode ou propriété dite 'sûres'
 //#endregion
 
-//#region Manipulation du DOM 
-//=> crée un 'a' + son attribut => 'href', ainsi qu'un label (un nom) à notre lien 'a'
-//=> ajouter le 'a' a un 'li' créée aussi via JS
-//=> ajouter tout cela au 'ul' déjà existant dans la page HTML
+//#region Manipulation du DOM .
+//=> crée un 'a' + son attribut => 'href', ainsi qu'un label (un nom) à notre lien 'a'.
+//=> ajouter le 'a' a un 'li' créée aussi via JS.
+//=> ajouter tout cela au 'ul' déjà existant dans la page HTML.
+console.log("*************************************");
 console.log("*************************************");
 
+//Création de la balise <a>.
 let elemA = document.createElement('a');
 elemA.href = '/';
 let labelA = document.createTextNode('News');
 elemA.appendChild(labelA);
 
+//Création de la balise <li>.
 let elemLi = document.createElement('li');
 elemLi.appendChild(elemA);
 
+//Récupération de ma balise <ul> de ma page index.html.
 let ulByDom = document.querySelector('ul');
 
+//Ajouter mes éléments créée plus tôt.
 ulByDom.appendChild(elemLi);
+
+console.log("*************************************");
+console.log("*************************************");
+//#endregion
+
+//#region Toujours dans le DOM modifié les styles css
+
+let myFirstTitle = document.querySelector('h1');
+
+myFirstTitle.style.color = 'blue';
 
 //#endregion
