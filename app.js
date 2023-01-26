@@ -278,3 +278,22 @@ console.log(TODAY.getTime());
 //Il y a quand même quelque méthode ou propriété dite 'sûres'
 //#endregion
 
+//#region Manipulation du DOM 
+//=> crée un 'a' + son attribut => 'href', ainsi qu'un label (un nom) à notre lien 'a'
+//=> ajouter le 'a' a un 'li' créée aussi via JS
+//=> ajouter tout cela au 'ul' déjà existant dans la page HTML
+console.log("*************************************");
+
+let elemA = document.createElement('a');
+elemA.href = '/';
+let labelA = document.createTextNode('News');
+elemA.appendChild(labelA);
+
+let elemLi = document.createElement('li');
+elemLi.appendChild(elemA);
+
+let ulByDom = document.querySelector('ul');
+
+ulByDom.appendChild(elemLi);
+
+//#endregion
