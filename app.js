@@ -278,5 +278,3 @@ console.log(TODAY.getTime());
 //Il y a quand même quelque méthode ou propriété dite 'sûres'
 //#endregion
 
-console.log("**********************************************************")
-
