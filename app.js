@@ -258,3 +258,25 @@ console.log(TODAY.getTime());
 
 //#region Les méthodes sur les string => https://www.w3schools.com/js/js_string_methods.asp
 //#endregion
+
+//#region Les méthodes sur les number => https://www.w3schools.com/js/js_number_methods.asp
+//#endregion
+
+//#region Les méthodes sur les number => https://www.w3schools.com/js/js_arrays.asp
+//#endregion
+
+//#region Le DOM => Document Object Model
+//L'objet document représente le document cad la page HTML charger dans le navigateur qui est actuelement visible par User
+//Il fait parti d'une convention qui doit être respecter par tout les navigateur de la même façon.
+//#endregion
+
+//#region Le BOM => Browser Object Model
+//Les propriétées permet d'avoir des informations sur ses objets et leurs méthodes permet d'interargir avec eux.
+//L'objet le plus élevée est 'window' autrement dit tout les autres objets son des propriétés de celui-ci vue qu'il sont intégrée à lui.
+//window.location, window.navigator, window.history, window.localstorage, ..
+// !! ATTENTION => Il n'y a pas de réglement strict a son sujet, les différents navigateur peuvent interpretée certaine méthodes/propriétés différement
+//Il y a quand même quelque méthode ou propriété dite 'sûres'
+//#endregion
+
+console.log("**********************************************************")
+
