@@ -1,4 +1,7 @@
 //#region les différent possibilité avec la Console.
+console.log("********************************************************");
+console.log("********************************************************");
+
 console.log('simple log');
 console.info('log d\'informations');
 console.warn('log d\'attention');
